@@ -1,0 +1,67 @@
+
+/* 4. Estilos para la sección de Sobre Nosotros */
+.about-section {
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center; /* Centra el bloque de texto horizontalmente */
+}
+
+.about-container {
+    width: 90%;
+    max-width: 800px; /* EVITA QUE EL TEXTO SE ESTIRE AL INFINITO. Le da un ancho máximo ideal */
+    text-align: center; /* Centra los párrafos para que se lean de forma elegante */
+    color: white; /* Cambialo a black si preferís que resalte más sobre el fondo gris */
+}
+
+.about-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6; /* Le da espacio entre renglones para que sea legible */
+    margin-bottom: 15px;
+}
+
+.about-highlight {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.about-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Un fondo gris bien clarito para que contraste si venís de fondo blanco, o usá el tuyo */
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 800px; /* Acota el ancho para que las líneas de texto no sean eternas y se lean cómodo */
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6; /* Le da aire entre renglones, clave para que no sea un bloque pesado */
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Estilo para la frase de cierre */
+.about-highlight {
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #000; /* O el color principal de tu marca (ej. azul o verde si usás) */
+    margin-top: 25px;
+}
