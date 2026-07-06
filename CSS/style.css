@@ -98,10 +98,13 @@ body {
 
 footer {
     display: flex;   
-    justify-content: space-between;
-    align-items: center;    
-    font-size:6px;
-    padding: 30px 20px;
+    width: 100%;
     background-color: black; 
-    color:white;
+    color: white;
+    padding: 30px 20px;
+    /* Subimos el tamaño de letra para que sea legible y no se deforme */
+    font-size: 14px; 
+    display: flex;
+    justify-content: center; /* Centra el contenido en pantallas gigantes */
 }
+
