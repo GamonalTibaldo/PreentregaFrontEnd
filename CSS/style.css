@@ -1,0 +1,107 @@
+
+.header-container {
+    display: flex;          
+    justify-content: space-between; 
+    align-items: center;    
+    padding: 10px 20px;
+    background-color: black; 
+    color:#ffffff;
+}
+
+.logo {
+    display: flex;         
+    align-items: center;   
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 40px;          
+    width: auto;           
+    object-fit: contain;  
+   
+}
+
+.buscador {
+    display: flex;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.buscador input {
+    padding: 5px 10px;
+    border: 2px solid #ccc; 
+    outline: none;          
+    border-radius: 25px 0 0 25px; 
+    width: 150px;
+    transition: border-color 0.3s;
+}
+
+
+.buscador input:focus {
+    border-color: #008cff; 
+}
+
+.buscador button {
+    padding: 5px 10px;
+    background-color: #151617;
+    color: white;
+    border: 1px solid #404346; 
+    border-left: none;         
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.buscador button:hover {
+    background-color:gray;
+}
+
+.nav-principal {
+    background-color: #333; 
+    padding: 10px 0;
+}
+
+.nav-lista {
+    display: flex;          
+    justify-content: center; 
+    list-style: none;       
+    gap: 30px;              
+    margin: 0;
+    padding: 0;
+}
+
+.nav-lista li a {
+    text-decoration: none;  
+    color: white;          
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s; 
+}
+
+
+.nav-lista li a:hover {
+    color: blue;  
+}
+
+body {
+      background-color:darkgray;
+      color: white; 
+      margin: 0;
+      min-height: 100vh;
+      flex:100;
+      }
+
+footer {
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;    
+    font-size:6px;
+    padding: 30px 20px;
+    background-color: black; 
+    color:white;
+}
