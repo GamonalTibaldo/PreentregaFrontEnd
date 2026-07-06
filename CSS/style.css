@@ -88,25 +88,75 @@
     color: blue;  
 }
 
-body {
-      background-color:darkgray;
-      color: white; 
-      margin: 0;
-      min-height: 100vh;
-      flex:100;
-      }
 
-footer {
-    display: flex;   
+/* 1. Resetear márgenes y forzar que la pantalla ocupe el 100% real */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #a3a3a3; /* O el color gris de fondo que estás usando en tu página */
+}
+
+/* 2. Estructura Flexbox para el body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 3. ESTO EMPUJA EL FOOTER AL PISO: El contenido del medio crece todo lo necesario */
+main {
+    flex: 1 0 auto; 
+}
+
+/* 4. Estilos para la sección de Sobre Nosotros */
+.about-section {
     width: 100%;
-    background-color: black; 
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center; /* Centra el bloque de texto horizontalmente */
+}
+
+.about-container {
+    width: 90%;
+    max-width: 800px; /* EVITA QUE EL TEXTO SE ESTIRE AL INFINITO. Le da un ancho máximo ideal */
+    text-align: center; /* Centra los párrafos para que se lean de forma elegante */
+    color: white; /* Cambialo a black si preferís que resalte más sobre el fondo gris */
+}
+
+.about-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6; /* Le da espacio entre renglones para que sea legible */
+    margin-bottom: 15px;
+}
+
+.about-highlight {
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* 5. Tu footer fijo en el fondo */
+footer {
+    flex-shrink: 0; /* Evita que el footer se achique */
+    width: 100%;
+    background-color: black;
     color: white;
     padding: 30px 20px;
-    /* Subimos el tamaño de letra para que sea legible y no se deforme */
-    font-size: 20px; 
     display: flex;
-    justify-content: center; /* Centra el contenido en pantallas gigantes */
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+
+
+
 
 .about-section {
     width: 100%;
